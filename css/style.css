@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  text-align: center;
+}
+#main {
+  display: inline-block;
+}
+#main kbd {
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  margin: 2px;
+  border: 1px solid red;
+}
+#main kbd:hover button {
+  display: block;
+}
+#main kbd button {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
