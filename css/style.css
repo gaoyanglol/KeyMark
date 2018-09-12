@@ -31,6 +31,7 @@ main:after {
   box-sizing: border-box;
   padding: 40px 20px;
   vertical-align: middle;
+  font-size: 14px;
 }
 #main kbd {
   position: relative;
@@ -40,6 +41,8 @@ main:after {
   margin: 5px;
   border: 1px solid #a5a5a5;
   border-radius: 5px;
+  vertical-align: middle;
+  text-transform: capitalize;
   background: -webkit-linear-gradient(top,#eee,#f9f9f9);
   background: -moz-linear-gradient(top,#eee,#f9f9f9);
   background: -o-linear-gradient(top,#eee,#f9f9f9);
@@ -70,11 +73,36 @@ main:after {
   box-shadow: inset 0 -1px 3px rgba(0, 0, 0, .39);
 }
 #main kbd:hover button {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  box-shadow: 1px 2px 4px #999;
 }
 #main kbd button {
-  display: none;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 5px;
+  bottom: 5px;
+  margin: 0;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 2px 4px;
+  background: #fff;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease;
+  cursor: pointer
+}
+
+#main kbd .fav-ico {
+  position: absolute;
+  left: 5px;
+  bottom: 7px;
+}
+
+.fav-ico {
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-radius: 8px;
 }
